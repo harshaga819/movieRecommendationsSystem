@@ -60,7 +60,7 @@ Large model files are hosted on **Google Drive** and automatically downloaded du
 | File Name | Description | Source |
 |------------|-------------|---------|
 | `tag_sim.npy` | Precomputed similarity matrix | [Download Link](https://drive.google.com/uc?export=download&id=YOUR_TAG_SIM_FILE_ID) |
-| `movie_tag_matrix.pkl` | Movie feature matrix | [Download Link](https://drive.google.com/uc?export=download&id=YOUR_MOVIE_TAG_MATRIX_FILE_ID) |
+| `movie_tag_matrix.pkl` | Movie feature matrix | [Download Link](https://drive.google.com/uc?export=download&id=1l99nPAKwbEhiCZLSncsK7i9d8x_3tfyT) |
 
 ---
 
