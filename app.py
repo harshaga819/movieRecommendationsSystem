@@ -1,13 +1,15 @@
 from flask import Flask, render_template, request, jsonify
-import numpy as np
-import pickle
 import json
-from utils.recommend import similar_movies_by_tags
+from utils.recommend import recommend_movies
+from utils.download_files import download_large_files
 
 app = Flask(__name__)
 
-# Load movie titles for dropdown
-with open('model/movie_titles.json', 'r') as f:
+# Automatically download model files if not present
+download_large_files()
+
+# Load list of movie titles for dropdown
+with open('model/movie_titles.json') as f:
     movie_titles = json.load(f)
 
 @app.route('/')
@@ -17,10 +19,9 @@ def home():
 @app.route('/recommend', methods=['POST'])
 def recommend():
     data = request.get_json()
-    movie_title = data.get('movie')
-
-    recommendations = similar_movies_by_tags(movie_title)
-    return jsonify({'recommendations': recommendations})
+    movie = data.get('movie')
+    recommendations = recommend_movies(movie)
+    return jsonify(recommendations)
 
 if __name__ == '__main__':
     app.run(debug=True)
