@@ -3,7 +3,7 @@ import gdown
 
 def download_large_files():
     files = {
-        "model/tag_sim.npy": "https://drive.google.com/uc?export=download&id=YOUR_TAG_SIM_FILE_ID",
+        "model/tag_sim.npy": "https://drive.google.com/uc?export=download&id=1MjJDvJjOytQGmDfiKjPHOU0Ve4X0L",
         "model/movie_tag_matrix.pkl": "https://drive.google.com/uc?export=download&id=1l99nPAKwbEhiCZLSncsK7i9d8x_3tfyT",
     }
 
