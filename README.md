@@ -1,4 +1,4 @@
-# Movie Recommendation System
+# MovieMind
 
 This is a **content-based movie recommendation system** built using **Flask**, **Python**, and **Machine Learning**.  
 It suggests similar movies based on user-selected titles using precomputed similarity matrices.
