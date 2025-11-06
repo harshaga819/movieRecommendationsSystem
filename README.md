@@ -10,13 +10,12 @@ It suggests similar movies based on user-selected titles using precomputed simil
 -  Content-Based Recommendations  
 -  Simple and responsive web interface (HTML, CSS, JS)  
 -  Automatic model file download from Google Drive (for deployment)  
--  Ready to deploy on platforms like **Render** or **Railway**
 
 ---
 
 ## Project Structure
 ```
-MovieRecommendationWebApp/
+MovieMind/
 │
 ├── app.py                        # Main Flask app
 ├── requirements.txt              # Project dependencies
@@ -68,8 +67,8 @@ Large model files are hosted on **Google Drive** and automatically downloaded du
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/harshaga819/MovieRecommendationWebApp.git
-cd MovieRecommendationWebApp
+git clone https://github.com/harshaga819/MovieMind.git
+cd MovieMind
 ````
 ### Create a Virtual Environment
 ```bash
